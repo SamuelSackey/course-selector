@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Carme&family=Martel:wght@600&family=Passion+One:wght@400;700&display=swap");
+
+:root {
+  --primary: #b85ee6;
+  --secondary: #999999;
+  --background: #111827;
+  --bg-light: #1f2937;
+  --text: #ffffff;
+  --skill-box: 170px;
+  --b-radius: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+dialog {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Martel", serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Passion One", cursive;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Passion One", cursive;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "Carme", sans-serif;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Carme", sans-serif;
+  font-size: 1.1rem;
+}
+
+.color {
+  color: var(--primary);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 30px auto;
+  padding: 32px 24px;
+  max-width: 1200px;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  border: 2px solid var(--primary);
+  background-color: var(--bg-light);
+  color: var(--text);
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid var(--secondary);
+}
+
+button {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  background-color: var(--primary);
+  color: var(--background);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-family: "Carme", sans-serif;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+dialog::backdrop {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+dialog {
+  margin: auto;
+  border: none !important;
+  border-radius: var(--b-radius);
+  max-width: 640px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 24px;
+  background-color: var(--bg-light);
+  border-radius: var(--b-radius);
+}
+
+output {
+  margin-top: 8px;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Course Selector</title>
+  </head>
+  <body>
+    <header>
+      <h2>Course <span class="color">Selector</span></h2>
+    </header>
+
+    <form class="main-form">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="aggregate">Aggregate:</label>
+        <input
+          type="number"
+          id="aggregate"
+          name="aggregate"
+          min="6"
+          max="54"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="location">Aggregate:</label>
+        <select name="location" id="location">
+          <option value="Accra">Accra</option>
+          <option value="Kumasi">Kumasi</option>
+          <option value="CapeCoast">Cape Coast</option>
+          <option value="Winneba">Winneba</option>
+          <option value="Takoradi">Takoradi</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="career">Future Career:</label>
+        <select name="career" id="career">
+          <option value="Doctor">Doctor</option>
+          <option value="Pilot">Pilot</option>
+          <option value="Chef">Chef</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Lawyer">Lawyer</option>
+          <option value="Graphic Designer">Graphic Designer</option>
+          <option value="Entrepreneur">Entrepreneur</option>
+          <option value="Accountant">Accountant</option>
+          <option value="Computer Scientist">Scientist</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="scholarship">Scholarship:</label>
+        <select name="scholarship" id="scholarship">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <button type="button" id="showDialog">Done</button>
+    </form>
+
+    <!-- Dialog -->
+    <dialog id="resultDialog">
+      <form method="dialog">
+        <h2><span class="color">Results</span></h2>
+
+        <h3 id="nameOutput"></h3>
+
+        <div>
+          <h3><span class="color">Optimal Programme(s)</span></h3>
+          <output> </output>
+        </div>
+
+        <button>OK</button>
+      </form>
+    </dialog>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
